@@ -7,6 +7,7 @@
 #include <TouchScreen.h>
 #include <MCUFRIEND_kbv.h>
 #include <avr/wdt.h>
+#include <logic.h>
 
 // Declarações de funções
 void resetArduino();
@@ -136,14 +137,6 @@ String read_SD(int fileNumber) {
     Serial.println("Erro ao abrir " + fileName);
     return "";
   }
-}
-
-String encrypt(String data, String key) {
-  String encryptedData = data;
-  for (int i = 0; i < data.length(); i++) {
-    encryptedData[i] = data[i] ^ key[i % key.length()];
-  }
-  return encryptedData;
 }
 
 void DetectButtons() {

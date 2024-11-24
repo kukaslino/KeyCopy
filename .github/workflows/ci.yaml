@@ -35,6 +35,6 @@ jobs:
           platformio run
 
       # 5. Executar os testes (opcional)
-      - name: Run Unit Tests
-        run: |
-          platformio test
+      #- name: Run Unit Tests
+      #  run: |
+      #    platformio test

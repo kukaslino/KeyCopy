@@ -251,7 +251,7 @@ void draw_Buttons(int type) {
       tft.setTextColor(BLACK);
       tft.setTextSize (2);
       tft.setCursor(30, 250);
-      tft.println("Formatar sistema");
+      tft.println("Format. sistema");
       break;
 
     default:
@@ -269,7 +269,7 @@ void draw_Buttons(int type) {
       tft.println("Emular Cartao");
 
       tft.setCursor(30, 250);
-      tft.println("Formatar disppsitivo");
+      tft.println("Format. sistema");
   }
 
 }

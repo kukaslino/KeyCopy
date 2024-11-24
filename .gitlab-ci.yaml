@@ -1,0 +1,21 @@
+stages:
+  - build
+  - test
+
+build_project:
+  stage: build
+  image: python:3.10
+  script:
+    - pip install -U platformio
+    - platformio run
+  only:
+    - main
+
+test_project:
+  stage: test
+  image: python:3.10
+  script:
+    - pip install -U platformio
+    - platformio test
+  only:
+    - main

@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <unity.h>
 #include <SD.h>
+#include <unity_config.h>
 
 // Protótipo da função a ser testada
 bool CheckAndDisplayFile(int fileNumber);

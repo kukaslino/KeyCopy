@@ -20,7 +20,7 @@ void Tela_NFC();
 void Tela_Emulate();
 void FormatSystem();
 bool deleteAllFingerprints();
-bool deleteAllSDFiles();
+void deleteAllSDFiles();
 void Emulate_Card(int card_select);
 void Valid_NFC(int fileNumber);
 void Write_SD(String encryptedData, int fileNumber);
@@ -373,7 +373,7 @@ bool deleteAllFingerprints() {
 
 }
 
-bool deleteAllSDFiles() {
+void deleteAllSDFiles() {
 
   Iniciate_SD();
 

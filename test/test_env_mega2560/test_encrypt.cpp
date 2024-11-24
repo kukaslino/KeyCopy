@@ -14,7 +14,7 @@ void test_blink() {
 }
 
 void setup() {
-    delay(2000); // Aguarda 2 segundos para estabilizar
+    delay(3000); // Aguarda 2 segundos para estabilizar
     UNITY_BEGIN();
     RUN_TEST(test_blink);
     UNITY_END();

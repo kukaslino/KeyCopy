@@ -17,23 +17,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. Instale o PlatformIO Core
-      - name: Set up PlatformIO
+      # 2. Configure a versão correta do Python
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.10  # Use uma versão de Python compatível com PlatformIO
+          python-version: 3.13  # Versão correta para o PlatformIO
 
+      # 3. Instale o PlatformIO Core
       - name: Install PlatformIO Core
         run: |
           python3 -m pip install -U platformio
           platformio update
 
-      # 3. Compile todos os ambientes definidos no platformio.ini
+      # 4. Compile todos os ambientes definidos no platformio.ini
       - name: Build Environments
         run: |
           platformio run
 
-      # 4. Executar os testes (opcional)
+      # 5. Executar os testes (opcional)
       - name: Run Unit Tests
         run: |
           platformio test

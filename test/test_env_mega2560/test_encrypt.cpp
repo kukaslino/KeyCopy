@@ -1,6 +1,12 @@
 #include <unity.h>
-#include <Arduino.h>
 #include <unity_config.h>
+
+#ifdef UNIT_TEST
+#include <iostream> // Para simular entradas e saídas no ambiente nativo
+#include <string>
+#else
+#include <Arduino.h>
+#endif
 
 void setUp() {
     // Inicialização antes de cada teste (opcional)
@@ -15,7 +21,6 @@ void test_blink() {
 }
 
 void setup() {
-    delay(3000); // Aguarda 2 segundos para estabilizar
     UNITY_BEGIN();
     RUN_TEST(test_blink);
     UNITY_END();

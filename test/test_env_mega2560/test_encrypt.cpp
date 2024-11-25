@@ -1,5 +1,6 @@
 #include <unity.h>
- #include <Arduino.h>
+#include <Arduino.h>
+#include <unity_config.h>
 
 void setUp() {
     // Inicialização antes de cada teste (opcional)

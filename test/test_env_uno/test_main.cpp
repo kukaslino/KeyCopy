@@ -1,12 +1,8 @@
+#ifdef UNIT_TEST
+
+#include <Arduino.h>
 #include <unity.h>
 #include <unity_config.h>
-
-#ifdef UNIT_TEST
-#include <iostream> // Para simular entradas e saídas no ambiente nativo
-#include <string>
-#else
-#include <Arduino.h>
-#endif
 
 void setUp() {
     // Inicialização antes de cada teste (opcional)
@@ -27,3 +23,5 @@ void setup() {
 }
 
 void loop() {}
+
+#endif

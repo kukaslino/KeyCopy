@@ -30,7 +30,7 @@ jobs:
         run: |
           platformio run
 
-      - name: Run Unit Tests (Native)
+      - name: Run Unit Tests
         run: |
-          platformio test -e native
+          platformio test -e mega2560
 

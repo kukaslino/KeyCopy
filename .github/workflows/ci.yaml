@@ -32,5 +32,12 @@ jobs:
 
       - name: Run Unit Tests
         run: |
-          platformio test -e mega2560
+          platformio test -e mega2560 -vvv
+      - name: Cache PlatformIO
+        uses: actions/cache@v3
+        with:
+          path: ~/.platformio
+          key: ${{ runner.os }}-platformio-${{ hashFiles('**/platformio.ini') }}
+          restore-keys: |
+            ${{ runner.os }}-platformio-
 

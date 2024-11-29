@@ -16,6 +16,6 @@ test_project:
   image: python:3.10
   script:
     - pip install -U platformio
-    - platformio test
+    - platformio test -e mega2560
   only:
     - main

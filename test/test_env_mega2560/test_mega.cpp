@@ -30,7 +30,7 @@ void test_initiate_sd() {
 // Testa a leitura de um arquivo existente no cartão SD
 void test_read_sd_success() {
 
-    if (SD.exists("card1.txt")) {
+    if (SD.exists("card4.txt")) {
         SD.remove("card4.txt");
     }
 

@@ -29,13 +29,15 @@ void test_initiate_sd() {
 
 // Testa a leitura de um arquivo existente no cartão SD
 void test_read_sd_success() {
-    // Remova o arquivo, se existir, para evitar duplicações
-    SD.remove("card4.txt");
+
+    if (SD.exists("card1.txt")) {
+        SD.remove("card4.txt");
+    }
 
     // Cria um arquivo de teste no cartão SD
     File testFile = SD.open("card4.txt", FILE_WRITE);
     if (testFile) {
-        testFile.print("Conteudo de teste"); // Escreve sem newline
+        testFile.print("Conteudo de teste");
         testFile.close();
     } else {
         TEST_FAIL_MESSAGE("Erro ao criar o arquivo card1.txt");
@@ -48,7 +50,7 @@ void test_read_sd_success() {
 
 // Testa a leitura de um arquivo inexistente
 void test_read_sd_file_not_found() {
-    String result = read_SD_test(99); // Um número de arquivo improvável de existir
+    String result = read_SD_test(99);
     TEST_ASSERT_EQUAL_STRING("", result.c_str());
 }
 

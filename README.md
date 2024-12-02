@@ -1,1 +1,27 @@
-Documentação do projeto disponivel no link: https://docs.google.com/document/d/1xcdDVPcue35bxrTUFZaQc6N2QlOCv4og/edit?usp=sharing&ouid=117159544560567968021&rtpof=true&sd=true
+# KeyCopy
+
+**KeyCopy** é um software embarcado desenvolvido para **copiar e emular cartões NFC**. Este projeto foi projetado para atender a demandas técnicas específicas relacionadas ao manuseio de cartões NFC com eficiência e segurança.
+
+---
+
+## Funcionalidades
+
+- Cópia de dados de cartões NFC com alta precisão.
+- Emulação de cartões NFC para aplicações práticas.
+- Arquitetura segura para gerenciamento e emulação de dados.
+- Compatível com uma ampla gama de tecnologias NFC.
+
+---
+
+## Stacks Utilizadas
+
+- Linguagem principal: **C++** (`.cpp` e `.h`)
+- Desenvolvimento focado em performance e compatibilidade com sistemas embarcados.
+
+---
+
+## Links
+
+- [Wiki do Projeto](https://github.com/kukaslino/KeyCopy/wiki)
+- [Issues e Sugestões](https://github.com/kukaslino/KeyCopy/issues)
+- [Contribua com o KeyCopy](https://github.com/kukaslino/KeyCopy/pulls)
